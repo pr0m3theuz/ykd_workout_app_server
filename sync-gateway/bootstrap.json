@@ -1,0 +1,137 @@
+{
+    "bootstrap": {
+        "group_id": "default",
+        "config_update_frequency": "10s",
+        "server": "couchbase://couchbase-server",
+        "username": "admin",
+        "password": "bWHqoG2v3ko3fG5E",
+        "server_tls_skip_verify": true,
+        "use_tls_server": false
+    },
+    "api": {
+        "public_interface": ":4984",
+        "admin_interface": ":4985",
+        "metrics_interface": ":4986",
+        "admin_interface_authentication": false,
+        "metrics_interface_authentication": false,
+        "enable_advanced_auth_dp": true,
+        "read_header_timeout": "5s",
+        "idle_timeout": "1m30s",
+        "compress_responses": true,
+        "https": {
+            "tls_minimum_version": "tlsv1.2"
+        },
+        "cors": {}
+    },
+    "logging": {
+        "log_file_path": "/var/log/sync_gateway",
+        "redaction_level": "partial",
+        "console": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 0,
+                "max_age": 0,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 10,
+            "log_level": "debug",
+            "log_keys": [
+                "*"
+            ],
+            "color_enabled": false
+        },
+        "error": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 360,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "warn": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 180,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "info": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "debug": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 2,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "trace": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 2,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "stats": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "audit": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000,
+            "enabled_events": [
+                53300,
+                53248,
+                53304,
+                53350,
+                53302,
+                53249,
+                53301,
+                53250,
+                54043,
+                53260
+            ]
+        }
+    },
+    "auth": {
+        "bcrypt_cost": 10
+    },
+    "replicator": {
+        "max_concurrent_changes_batches": 2,
+        "max_concurrent_revs": 5
+    },
+    "unsupported": {
+        "stats_log_frequency": "1m0s",
+        "serverless": {
+            "enabled": false,
+            "min_config_fetch_interval": "1s"
+        },
+        "http2": {},
+        "allow_dbconfig_env_vars": true,
+        "audit_info_provider": {}
+    },
+    "max_file_descriptors": 5000
+}

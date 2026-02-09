@@ -1,0 +1,19 @@
+2025-02-15T17:59:32.336Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ==== -- base.LogSyncGatewayVersion() at logging.go:275
+2025-02-15T17:59:32.336Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ====
+2025-02-15T18:44:00.885Z [ERR] c:#003 #003: 500 Unable to read body: isObjectEnd: object ended prematurely, unexpected char ", error found in #10 byte of ...|-server"
+"num_index_|..., bigger context ...|outs", 
+"server": "couchbase://couchbase-server"
+"num_index_replicas": 0,
+"import_docs": true,
+"enab|... -- rest.(*handler).writeError() at handler.go:1613
+2025-02-16T00:12:17.295Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ==== -- base.LogSyncGatewayVersion() at logging.go:275
+2025-02-16T00:12:17.295Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ====
+2025-02-16T00:16:55.237Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ==== -- base.LogSyncGatewayVersion() at logging.go:275
+2025-02-16T00:16:55.238Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ====
+2025-02-16T02:53:12.812Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ==== -- base.LogSyncGatewayVersion() at logging.go:275
+2025-02-16T02:53:12.813Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ====
+2025-02-22T14:23:47.198Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ==== -- base.LogSyncGatewayVersion() at logging.go:275
+2025-02-22T14:23:47.198Z ==== Couchbase Sync Gateway/3.2.2(21;3c0abf2) EE ====
+2025-02-22T14:46:25.942Z [ERR] c:#014 #014: 500 couldn't load database: unambiguous timeout | {"operation_id":"WaitUntilReady","time_observed":10001168,"retry_reasons":["NOT_READY"],"retry_attempts":15} -- rest.(*handler).writeError() at handler.go:1613
+2025-02-22T14:46:39.059Z [ERR] c:#015 #015: 500 couldn't load database: unambiguous timeout | {"operation_id":"WaitUntilReady","time_observed":10000409,"retry_reasons":["NOT_READY"],"retry_attempts":15} -- rest.(*handler).writeError() at handler.go:1613
+2025-02-22T14:49:14.515Z [ERR] Database has collections that require regenerate_sequences resync before it can go online: [_default._default] -- rest.(*ServerContext).TakeDbOnline() at server_context.go:1331

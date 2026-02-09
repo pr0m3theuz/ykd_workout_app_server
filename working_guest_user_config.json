@@ -1,0 +1,107 @@
+{
+	"name": "GUEST",
+	"collection_access": {
+		"_default": {
+			"Workout": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Utility": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"MicrocycleNote": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Users": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Program": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"ProgramNote": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"MuscleExercise": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Mesocycle": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"ExerciseNote": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Exercise": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Equipment": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"WorkoutNote": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Muscle": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"MesocycleNote": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Mechanic": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Force": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"MuscleGroup": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"MuscleRoleFunction": {
+				"all_channels": [
+					"!"
+				]
+			},
+			"Microcycle": {
+				"all_channels": [
+					"!"
+				]
+			}
+		}
+	},
+	"email": "",
+	"disabled": false,
+	"all_channels": [
+		"!"
+	]
+}

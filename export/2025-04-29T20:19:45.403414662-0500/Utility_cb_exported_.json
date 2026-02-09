@@ -1,0 +1,14 @@
+{"Utility":"Utility","_default":"_default","_rev":"0-2","local":7,"remote":11318,"time":1743650330}
+{"Utility":"Utility","_default":"_default","description":"An exercise that places a higher level of absolute intensity on the targeted muscles compared to secondary exercises. Basic exercises typically exhibit the following characteristics:\n\n1. Gravity dependency: These exercises rely on the force of gravity for resistance. 2. Inclusion or shifting of resistance across multiple muscle groups throughout the entire range of motion. For example, during a bench press, the front delto_ids, pectoralis major, and triceps are successively involved. 3. Natural transfer of torsion force to compression force: This occurs during certain exercises like the lockout phase in squats and bench presses, where the force is transferred to the bones and joints as compression force. In contrast, exercises like arm curls involve tension force directed towards the bone(s) and joint(s) during the full range of motion. (For more information, you can also explore the concept of \"angle of pull\".)","id":"basic","name":"Basic","type":"Utility"}
+{"Utility":"Utility","_default":"_default","description":"","id":"olympic","name":"Olympic","type":"Utility"}
+{"Utility":"Utility","_default":"_default","description":"","id":"undefined","name":"undefined","type":"Utility"}
+{"Utility":"Utility","_default":"_default","description":"Auxiliary exercises, also known as accessory exercises or assistance exercises, are additional exercises that complement and support the primary or compound exercises in a workout routine. ","id":"auxiliary","name":"Auxiliary","type":"Utility"}
+{"Utility":"Utility","_default":"_default","_rev":"0-2","local":7,"remote":11318,"time":1743881703}
+{"Utility":"Utility","_default":"_default","_rev":"0-2","local":7,"remote":11318,"time":1741221251}
+{"Utility":"Utility","_default":"_default","description":"","id":"power","name":"Power","type":"Utility"}
+{"Utility":"Utility","_default":"_default","description":"","id":"specialized","name":"Specialized","type":"Utility"}
+{"Utility":"Utility","_default":"_default","_rev":"0-2","local":7,"remote":11318,"time":1741192215}
+{"Utility":"Utility","_default":"_default","_rev":"0-2","local":7,"remote":11318,"time":1743885344}
+{"Utility":"Utility","_default":"_default","description":"An exercise could be either auxiliary or basic depending on how it is performed to emphasize different muscles.","id":"basic_auxiliary","name":"Basic/Auxiliary","type":"Utility"}
+{"Utility":"Utility","_default":"_default","_rev":"0-5","local":7,"remote":11318,"time":1740268341}
+{"Utility":"Utility","_default":"_default","metadataID":"_default"}

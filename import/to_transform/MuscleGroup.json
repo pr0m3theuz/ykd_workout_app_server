@@ -1,0 +1,11 @@
+{"_id":"NeckWt","name":"Neck","exrxName":"Neck"}
+{"_id":"ShouldWt","name":"Shoulders","exrxName":"Shoulders"}
+{"_id":"ArmWt","name":"Upper Arms","exrxName":"Upper Arms"}
+{"_id":"ForeArmWt","name":"Forearms","exrxName":"Forearms"}
+{"_id":"BackWt","name":"Back","exrxName":"Back"}
+{"_id":"ChestWt","name":"Chest","exrxName":"Chest"}
+{"_id":"WaistWt","name":"Core","exrxName":"Waist"}
+{"_id":"HipsWt","name":"Hips","exrxName":"Hips"}
+{"_id":"ThighWt","name":"Legs","exrxName":"Thighs"}
+{"_id":"CalfWt","name":"Calves","exrxName":"Calves"}
+{"_id":"FullBody","name":"Full Body","exrxName":"Full Body"}

@@ -1,0 +1,83 @@
+{
+  "name": "user",
+  "password": "password",
+  "admin_channels": ["!", "*"],
+  "collection_access": {
+    "_default": {
+      "CompletedPrograms": {
+        "admin_channels": ["!", "*", "CompletedPrograms"]
+      },
+      "CompletedSets": {
+        "admin_channels": ["!", "*", "CompletedSets"]
+      },
+      "CompletedWorkouts": {
+        "admin_channels": ["!", "*", "CompletedWorkouts"]
+      },
+      "LoadRepCapacity": {
+        "admin_channels": ["!", "*", "LoadRepCapacity"]
+      },
+      "ModernizedLoadRIR": {
+        "admin_channels": ["!", "*", "ModernizedLoadRIR"]
+      },
+      "MesocycleNote": {
+        "admin_channels": ["!", "*", "MesocycleNote"]
+      },
+      "Program": {
+        "admin_channels": ["!", "*", "Program"]
+      },
+      "Microcycle": {
+        "admin_channels": ["!", "*", "Microcycle"]
+      },
+      "Users": {
+        "admin_channels": ["!", "*", "Users"]
+      },
+      "MuscleRoleFunction": {
+        "admin_channels": ["!", "*", "MuscleRoleFunction"]
+      },
+      "MicrocycleNote": {
+        "admin_channels": ["!", "*", "MicrocycleNote"]
+      },
+      "Utility": {
+        "admin_channels": ["!", "*", "Utility"]
+      },
+      "MuscleGroup": {
+        "admin_channels": ["!", "*", "MuscleGroup"]
+      },
+      "Exercise": {
+        "admin_channels": ["!", "*", "Exercise"]
+      },
+      "Force": {
+        "admin_channels": ["!", "*", "Force"]
+      },
+      "Equipment": {
+        "admin_channels": ["!", "*", "Equipment"]
+      },
+      "WorkoutNote": {
+        "admin_channels": ["!", "*", "WorkoutNote"]
+      },
+      "Workout": {
+        "admin_channels": ["!", "*", "Workout"]
+      },
+      "Mesocycle": {
+        "admin_channels": ["!", "*", "Mesocycle"]
+      },
+      "Mechanic": {
+        "admin_channels": ["!", "*", "Mechanic"]
+      },
+      "ProgramNote": {
+        "admin_channels": ["!", "*", "ProgramNote"]
+      },
+      "MuscleExercise": {
+        "admin_channels": ["!", "*", "MuscleExercise"]
+      },
+      "ExerciseNote": {
+        "admin_channels": ["!", "*", "ExerciseNote"]
+      },
+      "Muscle": {
+        "admin_channels": ["!", "*", "Muscle"]
+      }
+    }
+  },
+  "email": "",
+  "disabled": false
+}

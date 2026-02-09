@@ -1,0 +1,55 @@
+{"Muscle":"Muscle","_default":"_default","_id":"WristExtensors","muscleGroupID":"ForeArmWt","name":"Wrist Extensors","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Soleus","muscleGroupID":"CalfWt","name":"Soleus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Splenius","muscleGroupID":"NeckWt","name":"Splenius","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TrapeziusUpper","muscleGroupID":"BackWt","name":"Trapezius Upper","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"DeltoidPosterior","muscleGroupID":"ShouldWt","name":"Deltoid Posterior","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TrapeziusLower","muscleGroupID":"BackWt","name":"Trapezius Lower","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"GluteusMedius","muscleGroupID":"HipsWt","name":"Gluteus Medius","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Brachialis","muscleGroupID":"ArmWt","name":"Brachiallis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Gastrocnemius","muscleGroupID":"CalfWt","name":"Gastrocnemius","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"HipFlexors","muscleGroupID":"HipsWt","name":"Hip Flexors","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Quadriceps","muscleGroupID":"ThighWt","name":"Quadriceps","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TeresMinor","muscleGroupID":"ShouldWt","name":"Teres Minor","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"WristFlexors","muscleGroupID":"ForeArmWt","name":"Wrist Flexors","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TricepsBrachii","muscleGroupID":"ArmWt","name":"Triceps Brachii","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Obliques","muscleGroupID":"WaistWt","name":"Obliques","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"PectoralisClavicular","muscleGroupID":"ChestWt","name":"Pectoralis Major, Clavicular","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TensorFasciaeLatae","muscleGroupID":"HipsWt","name":"TensorFasciaeLatae","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Sartorius","muscleGroupID":"HipsWt","name":"Sartorius","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Hamstrings","muscleGroupID":"ThighWt","name":"Hamstrings","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"HipExternalRotator","muscleGroupID":"HipsWt","name":"Hip External Rotator","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Pectineus","muscleGroupID":"HipsWt","name":"Pectineus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Brachioradialis","muscleGroupID":"ForeArmWt","name":"Brachioradialis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"GluteusMaximus","muscleGroupID":"HipsWt","name":"Gluteus Maximus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Gracilis","muscleGroupID":"HipsWt","name":"Gracilis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"DeltoidLateral","muscleGroupID":"ShouldWt","name":"Deltoid Lateral","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Propliteus","muscleGroupID":"CalfWt","name":"Propliteus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"QuadratusLumborum","muscleGroupID":"WaistWt","name":"Quadratus Lumborum","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"LatissimusDorsi","muscleGroupID":"BackWt","name":"Latissimus Dorsi","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"ErectorSpinae","muscleGroupID":"WaistWt","name":"Erector Spinae","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Supinators","muscleGroupID":"ForeArmWt","name":"Supinators","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Subscapularis","muscleGroupID":"BackWt","name":"Subscapularis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"RectusAbdominis","muscleGroupID":"WaistWt","name":"Rectus Abdominis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"GluteusMinimus","muscleGroupID":"HipsWt","name":"Gluteus Minimus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TransverseAbdominis","muscleGroupID":"WaistWt","name":"Transverse Abdominis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Sternocleidomastoid","muscleGroupID":"NeckWt","name":"Sternocleidomastoid","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Popliteus","muscleGroupID":"HipsWt","name":"Popliteus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Rhomboids","muscleGroupID":"BackWt","name":"Rhomboids","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"LevatorScapulae","muscleGroupID":"NeckWt","name":"Levator Scapulae","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Infraspinatus","muscleGroupID":"BackWt","name":"Infraspinatus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TrapeziusMiddle","muscleGroupID":"BackWt","name":"Trapezius Middle","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"DeltoidAnterior","muscleGroupID":"ShouldWt","name":"Deltoid Anterior","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"BicepsBrachii","muscleGroupID":"ArmWt","name":"Biceps Brachii","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"HipExernalRotators","muscleGroupID":"HipsWt","name":"Hip Exernal Rotators","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Supraspinatus","muscleGroupID":"ShouldWt","name":"Supraspinatus","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Iliopsoas","muscleGroupID":"HipsWt","name":"Iliopsoas","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Pronators","muscleGroupID":"ForeArmWt","name":"Pronators","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"SerratusAnterior","muscleGroupID":"ChestWt","name":"Serratus Anterior","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"BackGeneral","muscleGroupID":"BackWt","name":"General Back","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"HipAbductor","muscleGroupID":"HipsWt","name":"Hip Abductor","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TraverseAbdominus","muscleGroupID":"WaistWt","name":"Traverse Abdominis","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"PectoralisMinor","muscleGroupID":"ChestWt","name":"Pectoralis Minor","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"Adductors","muscleGroupID":"ThighWt","name":"Hip Adductors","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"PectoralisSternal","muscleGroupID":"ChestWt","name":"Pectoralis Major, Sternal","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TeresMajor","muscleGroupID":"ShouldWt","name":"Teres Major","type":"Muscle"}
+{"Muscle":"Muscle","_default":"_default","_id":"TibialisAnterior","muscleGroupID":"CalfWt","name":"Tibialis Anterior","type":"Muscle"}

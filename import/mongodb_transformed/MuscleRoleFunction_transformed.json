@@ -1,0 +1,27 @@
+[
+{
+  "_id": "target",
+  "roleFunction": "Target",
+  "description": "Target: The target muscle refers to the primary muscle group that is primarily responsible for generating movement or force during an exercise. It is the main muscle being intentionally targeted and worked during the exercise. For example, during a bicep curl, the biceps brachii muscle is the target muscle as it is the primary mover responsible for flexing the elbow."
+},
+{
+  "_id": "synergist",
+  "roleFunction": "Synergist",
+  "description": "Synergist: Synergist muscles are secondary muscles that assist the target muscle in generating movement during an exercise. They work in coordination with the target muscle to enhance the force production and contribute to the desired movement pattern. Synergist muscles help stabilize joints, provide additional strength, or assist in controlling the movement. For instance, during a push-up, the triceps brachii muscle acts as a synergist to the pectoralis major muscle, assisting in extending the elbow joint."
+},
+{
+  "_id": "stabilizer",
+  "roleFunction": "Stabilizer",
+  "description": "Stabilizer: Stabilizer muscles are responsible for maintaining stability and supporting the body or specific joints during an exercise. They work isometrically, meaning they contract without significant movement to provide stability and prevent unwanted motion or joint displacement. Stabilizer muscles help maintain proper posture, alignment, and control during an exercise. An example would be the core muscles acting as stabilizers during a standing overhead shoulder press to maintain a stable trunk and prevent excessive swaying or bending."
+},
+{
+  "_id": "dynamic_stabilizer",
+  "roleFunction": "Dynamic Stabilizer",
+  "description": "Dynamic Stabilizer: A dynamic stabilizer muscle plays a dual role in an exercise. It acts as both a stabilizer and a mover. These muscles help stabilize a joint or body segment while simultaneously generating movement at another joint or segment. Dynamic stabilizers provide stability and control during dynamic movements that involve multiple joints. For example, during a squat exercise, the quadriceps muscles function as dynamic stabilizers for the knee joint while also being the primary movers for knee extension."
+},
+{
+  "_id": "oblique_statbilizer",
+  "roleFunction": "Oblique Statbilizer",
+  "description": "Oblique Stabilizer: An oblique stabilizer refers specifically to the muscles that provide stability and support to the oblique abdominal muscles. The oblique muscles are located on the sides of the abdomen and are responsible for lateral flexion and rotation of the trunk. Oblique stabilizers help maintain trunk stability and control during exercises that involve rotational movements or anti-rotation exercises. They work to resist rotational forces and maintain proper alignment and control of the trunk during these movements."
+}
+]

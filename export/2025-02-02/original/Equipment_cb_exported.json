@@ -1,0 +1,25 @@
+{"Equipment":"Equipment","_default":"_default","_id":"TB","description":"","exrxID":"TB","exrxName":"Trap Bar","name":"Trap Bar","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"LV","description":"","exrxID":"LV","exrxName":"Lever","name":"Machine","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"RO","description":"","exrxID":"RO","exrxName":"Rope","name":"Rope","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SL","description":"","exrxID":"SL","exrxName":"Sled","name":"Sled","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"BB","description":"","exrxID":"BB","exrxName":"Barbell","name":"Barbell","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"BALB","description":"","exrxID":"BALB","exrxName":"Balance Board ","name":"Balance Board","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"BW","description":"","exrxID":"BW","exrxName":"Body Weight","name":"Body Weight","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"KB","description":"","exrxID":"KB","exrxName":"Kettlebell","name":"Kettlebell","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"AS","description":"","exrxID":"As","exrxName":"Assisted","name":"Assisted","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"BR","description":"","exrxID":"BR","exrxName":"Band Resistive","name":"Band Resistive","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"CB","description":"","exrxID":"CB","exrxName":"Cable","name":"Cable","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SV","description":"","exrxID":"SV","exrxName":"Sled Single","name":"Machine","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"ATLS","description":"","exrxID":"ATLS","exrxName":"Atlas Stone","name":"Atlas Stone","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SPB","description":"","exrxID":"SPB","exrxName":"Specialty Bar","name":"Specialty Bar","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"LB","description":"","exrxID":"LB","exrxName":"Log Bar","name":"Log Bar","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"DB","description":"","exrxID":"DB","exrxName":"Dumbbell","name":"Dumbbell","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"RM","description":"","exrxID":"RM","exrxName":"Rope Machine","name":"Rope Machine","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"LM","description":"","exrxID":"LM","exrxName":"Landmine","name":"Landmine","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SB","description":"","exrxID":"SB","exrxName":"Safety","name":"Safety Bar","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"MB","description":"","exrxID":"MB","exrxName":"Medicine Ball","name":"Medicine Ball","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"TI","description":"","exrxID":"TI","exrxName":"Tire","name":"Tire","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"WT","description":"","exrxID":"WT","exrxName":"Weighted","name":"Weighted","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SM","description":"","exrxID":"SM","exrxName":"Smith","name":"Smith Machine","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"SH","description":"","exrxID":"SH","exrxName":"Stretch","name":"Stretch","type":"Equipment"}
+{"Equipment":"Equipment","_default":"_default","_id":"ST","description":"","exrxID":"ST","exrxName":"Suspension","name":"Suspension","type":"Equipment"}

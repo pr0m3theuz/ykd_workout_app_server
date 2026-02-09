@@ -1,0 +1,74 @@
+# version: "3.8"
+name: couchbase
+services:
+  couchbase-server:
+    # user: 1024:100
+    # build: ./couchbase-server
+    image: couchbase/server:community
+    restart: always
+    ports:
+     - 8091-8096:8091-8096
+     - 11210:11210
+    environment:
+      - CLUSTER_NAME=couchbase
+      - COUCHBASE_ADMINISTRATOR_USERNAME=Administrator
+      - COUCHBASE_ADMINISTRATOR_PASSWORD=bWHqoG2v3ko3fG5E
+      - COUCHBASE_BUCKET=workouts
+      - COUCHBASE_BUCKET_RAMSIZE=512
+      - COUCHBASE_RBAC_USERNAME=admin
+      - COUCHBASE_RBAC_PASSWORD=bWHqoG2v3ko3fG5E
+      - COUCHBASE_RBAC_NAME=admin
+      - COUCHBASE_RAM_SIZE=2048
+      - COUCHBASE_EVENTING_RAM_SIZE=512
+      - COUCHBASE_INDEX_RAM_SIZE=512
+    hostname: couchbase-server
+    container_name: couchbase-server
+    working_dir: /opt/couchbase
+    volumes:
+      - couchbase:/opt/couchbase/var
+      - ./couchbase-server/init-cbserver.sh:/opt/couchbase/init/init-cbserver.sh:ro
+    stdin_open: true
+    tty: true
+    # networks:
+    #   - workshop
+    entrypoint: [""]
+    command: sh -c "/opt/couchbase/init/init-cbserver.sh"
+
+  sync-gateway:
+    # build: ./sync-gateway
+    image: couchbase/sync-gateway:community
+    restart: always
+    ports:
+      - 4984-4986:4984-4986
+    hostname: sync-gateway
+    container_name: sync-gateway
+    depends_on:
+      - couchbase-server
+    # working_dir: /docker-syncgateway
+    volumes:
+      # - couchbase_sync_gateway:/docker-syncgateway
+      # - ./sync-gateway/bootstrap.json:/etc/sync_gateway/config.json:ro
+      - ./sync-gateway/sglogs:/var/tmp/sglogs
+      # - ./sync-gateway/sync-gateway.json:/etc/sync_gateway/config.json:ro
+      - ./sync-gateway/bootstrap.json:/home/sync_gateway/sync_gateway.json:ro
+      # - ./updated_sync_gateway_server_config.json:/home/sync_gateway/sync_gateway.json:ro
+      - ./sync-gateway/init-syncgateway.sh:/opt/couchbase-sync-gateway/init/init-syncgateway.sh:ro
+    stdin_open: true
+    tty: true
+    # networks:
+    #   - workshop
+    entrypoint: [""]
+    command: sh -c "/opt/couchbase-sync-gateway/init/init-syncgateway.sh"
+
+volumes:
+    couchbase:
+        external: true
+        name: couchbase
+
+    # couchbase_sync_gateway:
+    #     external: true
+    #     name: couchbase_sync_gateway
+
+# networks:
+#   workshop:
+#     driver: bridge

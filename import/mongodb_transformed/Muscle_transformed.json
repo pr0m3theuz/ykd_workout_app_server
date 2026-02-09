@@ -1,0 +1,277 @@
+[
+{
+  "_id": "Sternocleidomastoid",
+  "muscleGroupID": "NeckWt",
+  "name": "Sternocleidomastoid"
+},
+{
+  "_id": "Splenius",
+  "muscleGroupID": "NeckWt",
+  "name": "Splenius"
+},
+{
+  "_id": "LevatorScapulae",
+  "muscleGroupID": "NeckWt",
+  "name": "Levator Scapulae"
+},
+{
+  "_id": "DeltoidAnterior",
+  "muscleGroupID": "ShouldWt",
+  "name": "Deltoid Anterior"
+},
+{
+  "_id": "DeltoidLateral",
+  "muscleGroupID": "ShouldWt",
+  "name": "Deltoid Lateral"
+},
+{
+  "_id": "DeltoidPosterior",
+  "muscleGroupID": "ShouldWt",
+  "name": "Deltoid Posterior"
+},
+{
+  "_id": "Supraspinatus",
+  "muscleGroupID": "ShouldWt",
+  "name": "Supraspinatus"
+},
+{
+  "_id": "TeresMinor",
+  "muscleGroupID": "ShouldWt",
+  "name": "Teres Minor"
+},
+{
+  "_id": "TeresMajor",
+  "muscleGroupID": "ShouldWt",
+  "name": "Teres Major"
+},
+{
+  "_id": "TricepsBrachii",
+  "muscleGroupID": "ArmWt",
+  "name": "Triceps Brachii"
+},
+{
+  "_id": "BicepsBrachii",
+  "muscleGroupID": "ArmWt",
+  "name": "Biceps Brachii"
+},
+{
+  "_id": "Brachialis",
+  "muscleGroupID": "ArmWt",
+  "name": "Brachiallis"
+},
+{
+  "_id": "Brachioradialis",
+  "muscleGroupID": "ForeArmWt",
+  "name": "Brachioradialis"
+},
+{
+  "_id": "WristFlexors",
+  "muscleGroupID": "ForeArmWt",
+  "name": "Wrist Flexors"
+},
+{
+  "_id": "WristExtensors",
+  "muscleGroupID": "ForeArmWt",
+  "name": "Wrist Extensors"
+},
+{
+  "_id": "Pronators",
+  "muscleGroupID": "ForeArmWt",
+  "name": "Pronators"
+},
+{
+  "_id": "Supinators",
+  "muscleGroupID": "ForeArmWt",
+  "name": "Supinators"
+},
+{
+  "_id": "BackGeneral",
+  "muscleGroupID": "BackWt",
+  "name": "General Back"
+},
+{
+  "_id": "LatissimusDorsi",
+  "muscleGroupID": "BackWt",
+  "name": "Latissimus Dorsi"
+},
+{
+  "_id": "TrapeziusUpper",
+  "muscleGroupID": "BackWt",
+  "name": "Trapezius Upper"
+},
+{
+  "_id": "TrapeziusMiddle",
+  "muscleGroupID": "BackWt",
+  "name": "Trapezius Middle"
+},
+{
+  "_id": "TrapeziusLower",
+  "muscleGroupID": "BackWt",
+  "name": "Trapezius Lower"
+},
+{
+  "_id": "Rhomboids",
+  "muscleGroupID": "BackWt",
+  "name": "Rhomboids"
+},
+{
+  "_id": "Infraspinatus",
+  "muscleGroupID": "BackWt",
+  "name": "Infraspinatus"
+},
+{
+  "_id": "Subscapularis",
+  "muscleGroupID": "BackWt",
+  "name": "Subscapularis"
+},
+{
+  "_id": "PectoralisSternal",
+  "muscleGroupID": "ChestWt",
+  "name": "Pectoralis Major, Sternal"
+},
+{
+  "_id": "PectoralisClavicular",
+  "muscleGroupID": "ChestWt",
+  "name": "Pectoralis Major, Clavicular"
+},
+{
+  "_id": "PectoralisMinor",
+  "muscleGroupID": "ChestWt",
+  "name": "Pectoralis Minor"
+},
+{
+  "_id": "SerratusAnterior",
+  "muscleGroupID": "ChestWt",
+  "name": "Serratus Anterior"
+},
+{
+  "_id": "RectusAbdominis",
+  "muscleGroupID": "WaistWt",
+  "name": "Rectus Abdominis"
+},
+{
+  "_id": "TraverseAbdominus",
+  "muscleGroupID": "WaistWt",
+  "name": "Traverse Abdominis"
+},
+{
+  "_id": "TransverseAbdominis",
+  "muscleGroupID": "WaistWt",
+  "name": "Transverse Abdominis"
+},
+{
+  "_id": "Obliques",
+  "muscleGroupID": "WaistWt",
+  "name": "Obliques"
+},
+{
+  "_id": "ErectorSpinae",
+  "muscleGroupID": "WaistWt",
+  "name": "Erector Spinae"
+},
+{
+  "_id": "QuadratusLumborum",
+  "muscleGroupID": "WaistWt",
+  "name": "Quadratus Lumborum"
+},
+{
+  "_id": "GluteusMaximus",
+  "muscleGroupID": "HipsWt",
+  "name": "Gluteus Maximus"
+},
+{
+  "_id": "HipAbductor",
+  "muscleGroupID": "HipsWt",
+  "name": "Hip Abductor"
+},
+{
+  "_id": "HipExernalRotators",
+  "muscleGroupID": "HipsWt",
+  "name": "Hip Exernal Rotators"
+},
+{
+  "_id": "HipFlexors",
+  "muscleGroupID": "HipsWt",
+  "name": "Hip Flexors"
+},
+{
+  "_id": "HipExternalRotator",
+  "muscleGroupID": "HipsWt",
+  "name": "Hip External Rotator"
+},
+{
+  "_id": "Iliopsoas",
+  "muscleGroupID": "HipsWt",
+  "name": "Iliopsoas"
+},
+{
+  "_id": "TensorFasciaeLatae",
+  "muscleGroupID": "HipsWt",
+  "name": "TensorFasciaeLatae"
+},
+{
+  "_id": "Sartorius",
+  "muscleGroupID": "HipsWt",
+  "name": "Sartorius"
+},
+{
+  "_id": "GluteusMedius",
+  "muscleGroupID": "HipsWt",
+  "name": "Gluteus Medius"
+},
+{
+  "_id": "GluteusMinimus",
+  "muscleGroupID": "HipsWt",
+  "name": "Gluteus Minimus"
+},
+{
+  "_id": "Pectineus",
+  "muscleGroupID": "HipsWt",
+  "name": "Pectineus"
+},
+{
+  "_id": "Popliteus",
+  "muscleGroupID": "HipsWt",
+  "name": "Popliteus"
+},
+{
+  "_id": "Gracilis",
+  "muscleGroupID": "HipsWt",
+  "name": "Gracilis"
+},
+{
+  "_id": "Quadriceps",
+  "muscleGroupID": "ThighWt",
+  "name": "Quadriceps"
+},
+{
+  "_id": "Hamstrings",
+  "muscleGroupID": "ThighWt",
+  "name": "Hamstrings"
+},
+{
+  "_id": "Adductors",
+  "muscleGroupID": "ThighWt",
+  "name": "Hip Adductors"
+},
+{
+  "_id": "Gastrocnemius",
+  "muscleGroupID": "CalfWt",
+  "name": "Gastrocnemius"
+},
+{
+  "_id": "Soleus",
+  "muscleGroupID": "CalfWt",
+  "name": "Soleus"
+},
+{
+  "_id": "TibialisAnterior",
+  "muscleGroupID": "CalfWt",
+  "name": "Tibialis Anterior"
+},
+{
+  "_id": "Propliteus",
+  "muscleGroupID": "CalfWt",
+  "name": "Propliteus"
+}
+]

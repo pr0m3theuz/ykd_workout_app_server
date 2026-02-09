@@ -1,0 +1,91 @@
+{
+  "interface": ":4984",
+  "adminInterface": ":4985",
+  "log": ["*"],
+  "logging": {
+    "log_file_path": "/var/tmp/sglogs",
+    "console": {
+      "log_level": "debug",
+      "log_keys": ["*"]
+    },
+    "error": {
+      "enabled": true,
+      "rotation": {
+        "max_size": 20,
+        "max_age": 180
+      }
+    },
+    "warn": {
+      "enabled": true,
+      "rotation": {
+        "max_size": 20,
+        "max_age": 90
+      }
+    },
+    "info": {
+      "enabled": false
+    },
+    "debug": {
+      "enabled": false
+    }
+  },
+  "disable_persistent_config": true,
+  "server_tls_skip_verify": true,
+  "use_tls_server": false,
+  "databases": {
+    "sample-mflix": {
+      "import_docs": true,
+      "bucket": "sample-mflix",
+      "server": "couchbase://couchbase-server",
+      "enable_shared_bucket_access": true,
+      "delta_sync": {
+        "enabled": false
+      },
+      "num_index_replicas": 0,
+      "username": "admin",
+      "password": "bWHqoG2v3ko3fG5E",
+      "users": {
+        "GUEST": { "disabled": false, "admin_channels": ["*"] },
+        "user": { "password": "*", "admin_channels": ["*"] }
+      },
+      "import_filter": ` 
+        function(doc) {
+					console.log("********Processing import filter - documents from couchbase server");
+					if (doc.documentType == 'Equipment' || doc.documentType == 'Exercise' || doc.documentType == 'ExerciseNote' || doc.documentType == 'ExerciseSets' || doc.documentType == 'Force' || doc.documentType == 'Mechanic' || doc.documentType == 'Mesocycle' || doc.documentType == 'MesocycleNote' || doc.documentType == 'Microcycle' || doc.documentType == 'MicrocycleNote' || doc.documentType == 'Muscle' || doc.documentType == 'MuscleExercise' || doc.documentType == 'MuscleGroup' || doc.documentType == 'MuscleRoleFunction' || doc.documentType == 'Program' || doc.documentType == 'ProgramNote' || doc.documentType == 'Set' || doc.documentType == 'Users' || doc.documentType == 'Utility' || doc.documentType == 'WorkoutNote' || doc.documentType == 'Workout' ) {
+						return true;
+					} else {
+						return false;
+					}
+				} `,
+      "sync": `
+					function sync(doc,oldDoc) {
+					/* Data Validation */
+					validateNotEmpty("documentType", doc.documentType);
+
+					// get type property
+					function getType() {
+						return (isDelete() ? oldDoc.documentType: doc.documentType);
+					}
+
+					// Check if document is being created/added for first time
+					function isCreate() {
+						// Checking false for the Admin UI to work
+						return ((oldDoc == false) || (oldDoc == null || oldDoc._deleted) && !isDelete());
+					}
+
+					// Check if this is a document delete
+					function isDelete() {
+						return (doc._deleted == true);
+					}
+
+					// Verify that specified property exists
+					function validateNotEmpty(key, value) {
+						if (!value) {
+							throw({forbidden: key + " is not provided."});
+						}
+					}
+				}
+			`
+    }
+  }
+}

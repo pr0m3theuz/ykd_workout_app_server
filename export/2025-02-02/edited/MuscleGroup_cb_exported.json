@@ -1,0 +1,11 @@
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"WaistWt","exrxName":"Waist","name":"Core","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"ShouldWt","exrxName":"Shoulders","name":"Shoulders","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"ThighWt","exrxName":"Thighs","name":"Legs","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"BackWt","exrxName":"Back","name":"Back","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"ChestWt","exrxName":"Chest","name":"Chest","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"HipsWt","exrxName":"Hips","name":"Hips","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"ForeArmWt","exrxName":"Forearms","name":"Forearms","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"ArmWt","exrxName":"Upper Arms","name":"Upper Arms","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"NeckWt","exrxName":"Neck","name":"Neck","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"FullBody","exrxName":"Full Body","name":"Full Body","type":"MuscleGroup"}
+{"MuscleGroup":"MuscleGroup","_default":"_default","id":"CalfWt","exrxName":"Calves","name":"Calves","type":"MuscleGroup"}

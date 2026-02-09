@@ -1,0 +1,2 @@
+{"_id":{"$oid":"66c0df1e1b6aee5c0ca6a5da"},"id":"66c0df1e1b6aee5c0ca6a5d9","name":null,"custom_data":{"subscribedTo":["66c0df1e1b6aee5c0ca6a5d9","PUBLIC"],"DefaultWarmUpSetRestInWholeMilliseconds":60000,"DefaultWorkingSetRestInWholeMilliseconds":60000,"weightUnit":"lbs","intensity":"RIR","isGlobalAdmin":false}}
+{"_id":{"$oid":"66c1045d5f26b4d45ec776f5"},"id":"PUBLIC"}

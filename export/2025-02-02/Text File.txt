@@ -1,0 +1,17 @@
+{
+  "Microcycle": "Microcycle",
+  "_default": "_default",
+  "id": "6779fb71b779f36f007c84fe",
+  "dateCreated": "2025-01-01T00:00:00.000000000Z",
+  "description": "Perform these exercises at an RIR of 2 or 3.",
+  "isPublic": true,
+  "lazyListItemID": 27789344720074800,
+  "mesocycleID": "6779fb71b779f36f007c84fc",
+  "name": "Strength Phase Week 1: Block 1 Microcycle 1",
+  "order": 1,
+  "ownerID": "MAX_MUSCLE",
+  "programID": "6779fb71b779f36f007c72be",
+  "type": "Microcycle",
+  "uuid": "7a646a162f9b4f6691c3519defc4e191",
+  "workouts": ["677b51dbc9b9881de7b12aae", "677b51dbc9b9881de7b12b3c", "677b51dbc9b9881de7b12bb7", "677b51dbc9b9881de7b12c45"]
+}

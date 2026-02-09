@@ -1,0 +1,27 @@
+sync-gateway      | 2025-02-16T19:43:15.626Z [INF] Replicate: c:sgr-mgr- db:workouts Starting newly assigned replication replicator
+sync-gateway      | 2025-02-16T19:43:15.626Z [INF] Replicate: c:replicator-push db:workouts ActiveReplicator had error state set with err: Get "pushAndPull": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:43:15.626Z [WRN] c:replicator-push db:workouts Couldn't connect: Get "pushAndPull": unsupported protocol scheme "" -- db.(*ActivePushReplicator).Start() at active_replicator_push.go:59
+sync-gateway      | 2025-02-16T19:43:15.627Z [INF] Replicate: c:replicator-push db:workouts Attempting to reconnect in background: Get "pushAndPull": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:43:15.627Z [DBG] Replicate+: c:replicator-push db:workouts starting reconnector
+sync-gateway      | 2025-02-16T19:43:15.627Z [DBG] Replicate+: c:replicator-push db:workouts couldn't find existing local checkpoint for ID "_sync:sgrStatus:sgr2cp:push:replicator"
+sync-gateway      | 2025-02-16T19:43:15.628Z [INF] Replicate: c:replicator-pull db:workouts ActiveReplicator had error state set with err: Get "pushAndPull": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:43:15.628Z [WRN] c:replicator-pull db:workouts Couldn't connect: Get "pushAndPull": unsupported protocol scheme "" -- db.(*ActivePullReplicator).Start() at active_replicator_pull.go:54
+sync-gateway      | 2025-02-16T19:43:15.628Z [INF] Replicate: c:replicator-pull db:workouts Attempting to reconnect in background: Get "pushAndPull": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:43:15.628Z [DBG] Replicate+: c:replicator-pull db:workouts starting reconnector
+sync-gateway      | 2025-02-16T19:43:15.628Z [DBG] Replicate+: c:replicator-pull db:workouts couldn't find existing local checkpoint for ID "_sync:sgrStatus:sgr2cp:pull:replicator"
+sync-gateway      | 2025-02-16T19:43:15.628Z [WRN] c:sgr-mgr- db:workouts Unable to start replication after refresh replicator: Get "pushAndPull": unsupported protocol scheme "" -- db.(*sgReplicateManager).RefreshReplicationCfg() at sg_replicate_cfg.go:819
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] SGCluster: c:sgr-mgr- db:workouts Replication definitions changed - refreshing...
+sync-gateway      | 2025-02-16T19:51:51.699Z [DBG] SGCluster+: c:workouts-cfgSG cfg_sg: Get, key: sgrCluster, cas: 0
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:sgr-mgr- db:workouts Initializing replication <ud>replicator</ud>
+sync-gateway      | 2025-02-16T19:51:51.699Z [DBG] SGCluster+: c:workouts-cfgSG cfg_sg: Get, key: sgrCluster, cas: 0
+sync-gateway      | 2025-02-16T19:51:51.699Z [DBG] Replicate+: c:sgr-mgr- db:workouts couldn't find existing local checkpoint for ID "_sync:sgrStatus:sgr2cp:pull:replicator"
+sync-gateway      | 2025-02-16T19:51:51.699Z [DBG] Replicate+: c:sgr-mgr- db:workouts couldn't find existing local checkpoint for ID "_sync:sgrStatus:sgr2cp:push:replicator"
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:sgr-mgr- db:workouts Couldn't load initial replication status for "replicator": Replication status not found - stats will be reset
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:sgr-mgr- db:workouts Created active replicator ID:replicator
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:sgr-mgr- db:workouts Starting newly assigned replication replicator
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:replicator-push db:workouts ActiveReplicator had error state set with err: Get "push": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:51:51.699Z [WRN] c:replicator-push db:workouts Couldn't connect: Get "push": unsupported protocol scheme "" -- db.(*ActivePushReplicator).Start() at active_replicator_push.go:59
+sync-gateway      | 2025-02-16T19:51:51.699Z [INF] Replicate: c:replicator-push db:workouts Attempting to reconnect in background: Get "push": unsupported protocol scheme ""
+sync-gateway      | 2025-02-16T19:51:51.699Z [DBG] Replicate+: c:replicator-push db:workouts starting reconnector
+sync-gateway      | 2025-02-16T19:51:51.700Z [DBG] Replicate+: c:replicator-push db:workouts couldn't find existing local checkpoint for ID "_sync:sgrStatus:sgr2cp:push:replicator"
+sync-gateway      | 2025-02-16T19:51:51.700Z [WRN] c:sgr-mgr- db:workouts Unable to start replication after refresh replicator: Get "push": unsupported protocol scheme "" -- db.(*sgReplicateManager).RefreshReplicationCfg() at sg_replicate_cfg.go:819

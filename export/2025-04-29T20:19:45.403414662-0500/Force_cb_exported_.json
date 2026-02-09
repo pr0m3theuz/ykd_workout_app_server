@@ -1,0 +1,13 @@
+{"Force":"Force","_default":"_default","_rev":"0-1","local":6,"remote":12803,"time":1743885344}
+{"Force":"Force","_default":"_default","_rev":"0-3","local":6,"remote":12803,"time":1741192215}
+{"Force":"Force","_default":"_default","_rev":"0-2","local":6,"remote":12803,"time":1743881703}
+{"Force":"Force","_default":"_default","_rev":"0-1","local":6,"remote":12803,"time":1741221251}
+{"Force":"Force","_default":"_default","_rev":"0-2","local":6,"remote":12803,"time":1743650330}
+{"Force":"Force","_default":"_default","description":"","id":"undefined","name":"Undefined","type":"Force"}
+{"Force":"Force","_default":"_default","_rev":"0-4","local":6,"remote":12803,"time":1740268341}
+{"Force":"Force","_default":"_default","description":"- Push exercises involve exerting force away from the body or pushing an object away from oneself during the concentric contraction of the target muscle. - The primary muscle groups targeted in push exercises are the muscles on the front side of the body, including the chest, shoulders, and triceps. - Examples of push exercises include push-ups, bench press, shoulder press, and triceps dips. - Push exercises often involve extension or pushing movements at joints such as the shoulder, elbow, or hip.","id":"push","name":"Push","type":"Force"}
+{"Force":"Force","_default":"_default","description":"","id":"pull_push","name":"PullPush","type":"Force"}
+{"Force":"Force","_default":"_default","description":"","id":"push_pull","name":"PushPull","type":"Force"}
+{"Force":"Force","_default":"_default","description":"","id":"null","name":"Null","type":"Force"}
+{"Force":"Force","_default":"_default","description":"- Pull exercises involve exerting force towards the body or pulling an object towards oneself during the concentric contraction of the target muscle. - The primary muscle groups targeted in pull exercises are the muscles on the back side of the body, including the back muscles, biceps, and forearms. - Examples of pull exercises include pull-ups, rows, lat pulldowns, and bicep curls. - Pull exercises often involve flexion or pulling movements at joints such as the shoulder, elbow, or hip.","id":"pull","name":"Pull","type":"Force"}
+{"Force":"Force","_default":"_default","metadataID":"_default"}

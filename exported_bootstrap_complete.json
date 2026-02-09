@@ -1,0 +1,535 @@
+{
+    "bootstrap": {
+        "group_id": "default",
+        "config_update_frequency": "10s",
+        "server": "couchbase://couchbase-server",
+        "username": "admin",
+        "password": "bWHqoG2v3ko3fG5E",
+        "server_tls_skip_verify": true,
+        "use_tls_server": false
+    },
+    "api": {
+        "public_interface": ":4984",
+        "admin_interface": ":4985",
+        "metrics_interface": ":4986",
+        "admin_interface_authentication": false,
+        "metrics_interface_authentication": true,
+        "enable_advanced_auth_dp": true,
+        "read_header_timeout": "5s",
+        "idle_timeout": "1m30s",
+        "compress_responses": true,
+        "https": {
+            "tls_minimum_version": "tlsv1.2"
+        },
+        "cors": {}
+    },
+    "logging": {
+        "log_file_path": "/var/log/sync_gateway",
+        "redaction_level": "partial",
+        "console": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 0,
+                "max_age": 0,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 10,
+            "log_level": "debug",
+            "log_keys": [
+                "*"
+            ],
+            "color_enabled": false
+        },
+        "error": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 360,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "warn": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 180,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "info": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "debug": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 2,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "trace": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 2,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000
+        },
+        "stats": {
+            "enabled": true,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 0
+        },
+        "audit": {
+            "enabled": false,
+            "rotation": {
+                "max_size": 100,
+                "max_age": 6,
+                "rotated_logs_size_limit": 1024
+            },
+            "collation_buffer_size": 1000,
+            "enabled_events": [
+                53300,
+                53248,
+                53304,
+                53350,
+                53302,
+                53249,
+                53301,
+                53250,
+                54043,
+                53260
+            ]
+        }
+    },
+    "auth": {
+        "bcrypt_cost": 10
+    },
+    "replicator": {
+        "max_concurrent_changes_batches": 2,
+        "max_concurrent_revs": 5
+    },
+    "unsupported": {
+        "stats_log_frequency": "1m0s",
+        "serverless": {
+            "enabled": false,
+            "min_config_fetch_interval": "1s"
+        },
+        "http2": {},
+        "allow_dbconfig_env_vars": true,
+        "audit_info_provider": {}
+    },
+    "max_file_descriptors": 5000,
+    "databases": {
+        "workouts": {
+            // "server": "couchbase://couchbase-server",
+            "bucket": "workouts",
+            // "username": "admin",
+            // "password": "bWHqoG2v3ko3fG5E",
+            "name": "workouts",
+            // "sync": "function(doc){channel(doc.channels);}",
+            "revs_limit": 100,
+            "import_docs": true,
+            // "import_partitions": 16,
+            "import_backup_old_rev": false,
+            "allow_empty_password": false,
+            "cache": {
+                "rev_cache": {
+                    "size": 5000,
+                    "shard_count": 16
+                },
+                "channel_cache": {
+                    "max_number": 50000,
+                    "compact_high_watermark_pct": 80,
+                    "compact_low_watermark_pct": 60,
+                    "max_wait_pending": 5000,
+                    "max_num_pending": 10000,
+                    "max_wait_skipped": 3600000,
+                    "enable_star_channel": true,
+                    "max_length": 500,
+                    "min_length": 50,
+                    "expiry_seconds": 60
+                }
+            },
+            "offline": false,
+            "unsupported": {
+                "warning_thresholds": {
+                    "xattr_size_bytes": 943718,
+                    "channels_per_doc": 50,
+                    "access_and_role_grants_per_doc": 50,
+                    "channels_per_user": 50000,
+                    "channel_name_size": 250
+                }
+            },
+            "old_rev_expiry_seconds": 300,
+            "view_query_timeout_secs": 75,
+            "local_doc_expiry_secs": 7776000,
+            "enable_shared_bucket_access": true,
+            "session_cookie_secure": false,
+            "session_cookie_http_only": false,
+            "allow_conflicts": true,
+            "num_index_replicas": 0,
+            "use_views": false,
+            "send_www_authenticate_header": true,
+            "slow_query_warning_threshold": 500,
+            "delta_sync": {
+                "enabled": false,
+                "rev_max_age_seconds": 86400
+            },
+            "compact_interval_days": 1,
+            "sgreplicate_enabled": true,
+            "sgreplicate_websocket_heartbeat_secs": 300,
+            "replications": {
+                "replicator1": {
+                    "replication_id": "replicator1",
+                    "remote": "PushAndPull",
+                    "collections_enabled": true,
+                    "direction": "PushAndPull",
+                    "conflict_resolution_type": "default",
+                    "custom_conflict_resolver": "none",
+                    "max_backoff_time": 5,
+                    "initial_state": "running",
+                    "continuous": true,
+                    "batch_size": 200
+                }
+            },
+            "serve_insecure_attachment_types": false,
+            "query_pagination_limit": 5000,
+            "client_partition_window_secs": 2592000,
+            "javascript_timeout_secs": 0,
+            "suspendable": false,
+            "logging": {
+                "console": {
+                    "log_level": "debug",
+                    "log_keys": [
+                        "*"
+                    ]
+                },
+                "audit": {
+                    "enabled": false,
+                    "enabled_events": [
+                        53283,
+                        54301,
+                        54021,
+                        54103,
+                        54111,
+                        54411,
+                        54412,
+                        54000,
+                        54200,
+                        54402,
+                        54011,
+                        54030,
+                        53291,
+                        54110,
+                        54421,
+                        53281,
+                        53292,
+                        54044,
+                        54112,
+                        54113,
+                        54031,
+                        54413,
+                        53284,
+                        53290,
+                        54100,
+                        54401,
+                        54102,
+                        54300,
+                        53282,
+                        54101,
+                        54400,
+                        54403,
+                        54002,
+                        54032,
+                        54042,
+                        54104,
+                        54045,
+                        54114,
+                        53280,
+                        54010,
+                        54020,
+                        54041
+                    ]
+                }
+            },
+            "scopes": {
+                "_default": {
+                    "collections": {
+                        "Equipment": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Exercise": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "ExerciseNote": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "ExerciseSets": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Force": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Mechanic": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Mesocycle": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "MesocycleNote": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Microcycle": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "MicrocycleNote": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Muscle": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "MuscleExercise": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "MuscleGroup": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "MuscleRoleFunction": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Program": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "ProgramNote": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Set": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Utility": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "Workout": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        },
+                        "WorkoutNote": {
+                            "import_filter": "function(doc) { return true; }",
+                            "sync": "function(doc){channel(doc.channels);}"
+                        }
+                    }
+                }
+            },
+            "guest": {
+                "disabled": false,
+                "name": "guest",
+                "password": "bWHqoG2v3ko3fG5E",
+                "collection_access": {
+                    "_default": {
+                        "Equipment": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Exercise": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "ExerciseNote": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "ExerciseSets": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Force": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Mechanic": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Mesocycle": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "MesocycleNote": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Microcycle": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "MicrocycleNote": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Muscle": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "MuscleExercise": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "MuscleGroup": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "MuscleRoleFunction": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Program": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "ProgramNote": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Set": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Users": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Utility": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "Workout": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        },
+                        "WorkoutNote": {
+                            "admin_channels": [
+                                "*"
+                            ],
+                            "all_channels": [
+                                "*"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
