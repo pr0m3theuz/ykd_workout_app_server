@@ -3,10 +3,11 @@
         "group_id": "default",
         "config_update_frequency": "10s",
         "server": "couchbase://couchbase-server",
+        "ca_cert_path": "/etc/sync_gateway/ca-cert.pem"
         "username": "admin",
         "password": "bWHqoG2v3ko3fG5E",
-        "server_tls_skip_verify": true,
-        "use_tls_server": false
+        "server_tls_skip_verify": false,
+        "use_tls_server": true
     },
     "api": {
         "public_interface": ":4984",
@@ -19,7 +20,9 @@
         "idle_timeout": "1m30s",
         "compress_responses": true,
         "https": {
-            "tls_minimum_version": "tlsv1.2"
+            "tls_cert_path": "/etc/sync_gateway/sg-cert.pem",
+            "tls_key_path": "/etc/sync_gateway/sg-key.pem",
+            "tls_minimum_version": "tlsv1.3"
         },
         "cors": {}
     },
