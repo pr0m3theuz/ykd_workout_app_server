@@ -7,20 +7,21 @@ services:
     image: couchbase/server:community
     restart: always
     ports:
-     - 8091-8096:8091-8096
+     - 127.0.0.1:8091:8091
+     # - 8091-8096:8091-8096
      - 11210:11210
     environment:
-      - CLUSTER_NAME=couchbase
-      - COUCHBASE_ADMINISTRATOR_USERNAME=Administrator
-      - COUCHBASE_ADMINISTRATOR_PASSWORD=bWHqoG2v3ko3fG5E
-      - COUCHBASE_BUCKET=workouts
-      - COUCHBASE_BUCKET_RAMSIZE=512
-      - COUCHBASE_RBAC_USERNAME=admin
-      - COUCHBASE_RBAC_PASSWORD=bWHqoG2v3ko3fG5E
-      - COUCHBASE_RBAC_NAME=admin
-      - COUCHBASE_RAM_SIZE=2048
-      - COUCHBASE_EVENTING_RAM_SIZE=512
-      - COUCHBASE_INDEX_RAM_SIZE=512
+      - CLUSTER_NAME=${CLUSTER_NAME:-couchbase}
+      - COUCHBASE_ADMINISTRATOR_USERNAME=${COUCHBASE_ADMINISTRATOR_USERNAME:-Administrator}
+      - COUCHBASE_ADMINISTRATOR_PASSWORD=${COUCHBASE_ADMINISTRATOR_PASSWORD}
+      - COUCHBASE_BUCKET=${COUCHBASE_BUCKET:-workouts}
+      - COUCHBASE_BUCKET_RAMSIZE=${COUCHBASE_BUCKET_RAMSIZE:-512}
+      - COUCHBASE_RBAC_USERNAME=${COUCHBASE_RBAC_USERNAME:-admin}
+      - COUCHBASE_RBAC_PASSWORD=${COUCHBASE_RBAC_PASSWORD}
+      - COUCHBASE_RBAC_NAME=${COUCHBASE_RBAC_NAME:-admin}
+      - COUCHBASE_RAM_SIZE=${COUCHBASE_RAM_SIZE:-2048}
+      - COUCHBASE_EVENTING_RAM_SIZE=${COUCHBASE_EVENTING_RAM_SIZE:-512}
+      - COUCHBASE_INDEX_RAM_SIZE=${COUCHBASE_INDEX_RAM_SIZE:-512}
     hostname: couchbase-server
     container_name: couchbase-server
     working_dir: /opt/couchbase
@@ -39,7 +40,10 @@ services:
     image: couchbase/sync-gateway:community
     restart: always
     ports:
-      - 4984-4986:4984-4986
+      # - 4984-4986:4984-4986
+      - "4984:4984"             # Public API (HTTPS)
+      - "127.0.0.1:4985:4985"  # Admin API (localhost only)
+      # Remove: 4986 unless metrics needed
     hostname: sync-gateway
     container_name: sync-gateway
     depends_on:
