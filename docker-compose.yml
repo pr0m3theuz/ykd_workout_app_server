@@ -26,6 +26,7 @@ services:
     container_name: couchbase-server
     working_dir: /opt/couchbase
     volumes:
+      - ./certs:/opt/couchbase/var/lib/couchbase/inbox:ro
       - couchbase:/opt/couchbase/var
       - ./couchbase-server/init-cbserver.sh:/opt/couchbase/init/init-cbserver.sh:ro
     stdin_open: true
@@ -50,6 +51,9 @@ services:
       - couchbase-server
     # working_dir: /docker-syncgateway
     volumes:
+      - ./certs/ca-cert.pem:/etc/sync_gateway/ca-cert.pem:ro
+      - ./certs/sg-cert.pem:/etc/sync_gateway/sg-cert.pem:ro
+      - ./certs/sg-key.pem:/etc/sync_gateway/sg-key.pem:ro
       # - couchbase_sync_gateway:/docker-syncgateway
       # - ./sync-gateway/bootstrap.json:/etc/sync_gateway/config.json:ro
       - ./sync-gateway/sglogs:/var/tmp/sglogs
