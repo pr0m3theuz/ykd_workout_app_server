@@ -73,6 +73,23 @@ if ! [ -f "$FILE" ]; then
 
   sleep 2s 
 
+  # Configure TLS via CLI:
+  # Upload certificates
+  /opt/couchbase/bin/couchbase-cli ssl-manage \
+    -c localhost:8091 \
+    -u Administrator \
+    -p ${CB_ADMIN_PASSWORD} \
+    --upload-cluster-ca=/opt/couchbase/var/lib/couchbase/inbox/ca-cert.pem \
+    --set-node-certificate
+  
+  # Enable client certificate authentication (optional)
+  /opt/couchbase/bin/couchbase-cli ssl-manage \
+    -c localhost:8091 \
+    -u Administrator \
+    -p ${CB_ADMIN_PASSWORD} \
+    --set-client-auth-state enable \
+    --set-client-auth-path /opt/couchbase/var/lib/couchbase/inbox/ca-cert.pem
+
 #   # create indexes using the QUERY REST API
 #   /opt/couchbase/bin/curl -v http://localhost:8093/query/service \
 #   -u $COUCHBASE_ADMINISTRATOR_USERNAME:$COUCHBASE_ADMINISTRATOR_PASSWORD \
