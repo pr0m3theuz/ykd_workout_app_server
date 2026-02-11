@@ -2,7 +2,7 @@
 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Couchbase](https://img.shields.io/badge/Couchbase-EA2328?style=for-the-badge&logo=couchbase&logoColor=white)
-![License](https://img.shields.io/badge/License-GPLv3-green)
+![License](https://img.shields.io/badge/License-GPLv3-green?style=for-the-badge)
 
 > Backend synchronization infrastructure for YKD workout tracking app. Enables multi-device sync, data backup, and local-first architecture using Couchbase Server and Sync Gateway.
 
