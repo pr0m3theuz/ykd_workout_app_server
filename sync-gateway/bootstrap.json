@@ -2,8 +2,8 @@
     "bootstrap": {
         "group_id": "default",
         "config_update_frequency": "10s",
-        "server": "couchbase://couchbase-server",
-        "ca_cert_path": "/etc/sync_gateway/ca-cert.pem"
+        "server": "couchbase://couchbase-server.tail0c235.ts.net",
+        "ca_cert_path": "/etc/sync_gateway/certs",
         "username": "admin",
         "password": "bWHqoG2v3ko3fG5E",
         "server_tls_skip_verify": false,
@@ -20,8 +20,8 @@
         "idle_timeout": "1m30s",
         "compress_responses": true,
         "https": {
-            "tls_cert_path": "/etc/sync_gateway/sg-cert.pem",
-            "tls_key_path": "/etc/sync_gateway/sg-key.pem",
+            "tls_cert_path": "/etc/sync_gateway/certs/couchbase-server.tail0c235.ts.net.crt",
+            "tls_key_path": "/etc/sync_gateway/certs/couchbase-server.tail0c235.ts.net.key",
             "tls_minimum_version": "tlsv1.3"
         },
         "cors": {}
